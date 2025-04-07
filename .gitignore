@@ -6,6 +6,15 @@ __pycache__/
 # Virtual Environment
 .venv/
 
+#Ignore all .html files
+*.html
+
+# Ignore all .txt files
+*.txt
+
+# But don't ignore requirements.txt
+!requirements.txt
+
 # C extensions
 *.so
 
