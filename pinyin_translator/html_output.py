@@ -93,7 +93,6 @@ def to_html(pinyin_text, title="Pinyin Output"):
             padding: 1rem 0;
         }}
 
-        /* 🖨️ Print-friendly styles */
         @media print {{
             body {{
                 background-color: white;
@@ -144,7 +143,7 @@ def to_html(pinyin_text, title="Pinyin Output"):
         function copyPinyin() {{
             const text = document.getElementById("rawPinyin").value;
             navigator.clipboard.writeText(text).then(() => {{
-                alert("✅ Pinyin copied to clipboard!");
+                alert("Pinyin copied to clipboard");
             }});
         }}
     </script>

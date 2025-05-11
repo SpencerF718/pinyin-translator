@@ -3,11 +3,9 @@ from pinyin_translator.html_output import to_html
 import webbrowser
 
 def main():
-    print("Welcome to the Chinese → Pinyin Converter!\n")
-
     chinese_text = input("Enter your Chinese text:\n> ").strip()
     if not chinese_text:
-        print("No input provided. Exiting.")
+        print("No input provided.")
         return
 
     print("\nUse tone marks or tone numbers?")
@@ -29,27 +27,27 @@ def main():
         print(pinyin)
 
     elif output_choice == "2":
-        filename = input("Enter output filename (e.g., output.txt):\n> ").strip()
+        filename = input("Enter output filename (e.g. output.txt):\n> ").strip()
         if not filename:
-            print("No filename provided. Exiting.")
+            print("No filename provided.")
             return
         with open(filename, "w", encoding="utf-8") as f:
             f.write(pinyin)
         print(f"Pinyin written to {filename}")
 
     elif output_choice == "3":
-        filename = input("Enter HTML output filename (e.g., output.html):\n> ").strip()
+        filename = input("Enter HTML output filename (e.g. output.html):\n> ").strip()
         if not filename:
-            print("No filename provided. Exiting.")
+            print("No filename provided.")
             return
-        html = to_html(pinyin)  # Only pass the pinyin to the HTML generator
+        html = to_html(pinyin)
         with open(filename, "w", encoding="utf-8") as f:
             f.write(html)
         print(f"HTML output written to {filename}")
         webbrowser.open(filename)
 
     else:
-        print("Invalid choice. Exiting.")
+        print("Invalid choice.")
 
 if __name__ == "__main__":
     main()

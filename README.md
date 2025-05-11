@@ -2,9 +2,8 @@
 
 Convert Simplified Chinese text into **pinyin** (with tone marks or tone numbers), and output it as a **clean, dark-themed HTML page** — complete with:
 - Tone color highlights
-- Hover tooltips for tone info
 - Copy button for raw pinyin
-- Console, text file, or HTML export
+- Console, text file, or HTML output
 
 ---
 
@@ -18,13 +17,12 @@ Convert Simplified Chinese text into **pinyin** (with tone marks or tone numbers
 ## Features
 
 - Accepts input from user prompt
-- Choose tone marks (e.g., `nǐ hǎo`) or tone numbers (`ni3 hao3`)
+- Choose tone marks (`nǐ hǎo`) or tone numbers (`ni3 hao3`)
 - Output to:
   - Console
   - `.txt` file
   - `.html` file
-- HTML with dark mode, chunked layout, and responsive design
-- Copy button to grab just the pinyin
+- HTML with dark mode, color coded tone marks, and copy button
 
 ---
 
@@ -63,6 +61,7 @@ You'll be asked to:
 1. Enter your Chinese text
 2. Choose tone formatting (marks or numbers)
 3. Choose your output format (console, text, or HTML)
+4. Enter your output file name (test.html)
 
 ---
 
